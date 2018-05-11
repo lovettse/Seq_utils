@@ -1,0 +1,70 @@
+assem_virus_paired_sra.py	/data/_scripts/slovett	Viral de novo assembly using paired-end data retrieved from SRA
+bac_assembly.py	/data/_scripts/slovett/assembly	Assemble BAC sequences from PacBio data using Canu
+filter_spades_assem.py	/data/_scripts/slovett/assembly	Filter SPAdes assemblies
+run_mummer.sh	/data/_scripts/slovett/assembly	Create dotplot from draft genome and reference
+bacterial_genotyping_UNSTABLE.py	/data/_scripts/slovett/bacterial_genotyping	Bacterial genotyping pipeline
+bacterial_genotyping_v0.9.py	/data/_scripts/slovett/bacterial_genotyping	Bacterial genotyping pipeline (Stable version)
+cut_ref_fastq.py	/data/_scripts/slovett/bacterial_genotyping	Cuts reference up into artificial reads
+find_lc_regions.py	/data/_scripts/slovett/bacterial_genotyping	Use reference, fastq from cut_ref_fastq.py, and prinseq to find low complexity regions
+find_rep_snps.py	/data/_scripts/slovett/bacterial_genotyping	Use list of snps and output of rep_regions_bybase.py to find snps in repetitive regions
+rep_regions_bybase.py	/data/_scripts/slovett/bacterial_genotyping	Use refere, fastq from cut_ref_fastq.py, and bowtie2 to find repetitive regions
+summarize_vcf_v2.py	/data/_scripts/slovett/bacterial_genotyping	Summarize VCF output by SnpEff
+base_transition_matrix.py	/data/_scripts/slovett	Written for Nicole	
+base_transition_matrix_v2.py	/data/_scripts/slovett	Written for Nicole
+cov_from_depth.py	/data/_scripts/slovett	Summary of coverage stats 
+cutadapt_illumina_single.py	/data/_scripts/slovett/cutadapt	Run cutadapt on single end reads
+cutadapt_paired_nosispa_2.0.py	/data/_scripts/slovett/cutadapt	Run cutadapt on paired reads (uses 2 cores)
+extract_blast_hits.py	/data/_scripts/slovett	Get BLAST hits out of a fasta
+extract_seqs_from_multi_fasta.py	/data/_scripts/slovett	Get sequences out of a FASTA
+deinterleave_fastq.sh	/data/_scripts/slovett/fastx_processing	Does what its called
+fix_fastq_pairing.py	/data/_scripts/slovett/fastx_processing	Remove unpaired reads and properly order paired fastqs
+index_filter_fastqs_gzipped.py	/data/_scripts/slovett/fastx_processing	Index filter single-index fastqs, takes gzipped input
+oneline_fasta.py	/data/_scripts/slovett/fastx_processing	Reformat a fasta so that each sequence is on only one line
+order_fasta_by_length.sh	/data/_scripts/slovett/fastx_processing	Reorder fasta so that the longest sequences are at the top
+random_subset_fastq.py	/data/_scripts/slovett/fastx_processing	Get a random subset from a fastq (only works single-ended)
+remove_from_fasta.py	/data/_scripts/slovett/fastx_processing	Remove sequences from fasta
+sequential_fastq.sh	/data/_scripts/slovett/fastx_processing	Change fastq headers to be numbered sequentially
+shorten_fastq_reads.py	/data/_scripts/slovett/fastx_processing	Shorten fastq reads to user-defined length (for testing)
+split_fasta.sh	/data/_scripts/slovett/fastx_processing	Split multi-fasta into multiple files named for its headers
+subset_fasta_by_length.py	/data/_scripts/slovett/fastx_processing	Subset a fasta by user-defined min/max length
+subset_fastq_by_length.py	/data/_scripts/slovett/fastx_processing	Subset a fastq by user-defined min length
+filter_htseq.py	/data/_scripts/slovett	Filter htseq output to only contain user-provided locus tags
+genbank_to_faa.py	/data/_scripts/slovett/genbank	Get amino acid fasta from genbank file
+genbank_to_faa_only_tags.py	/data/_scripts/slovett/genbank	Get amino acid fasta from genbank file
+genbank_to_ffn.py	/data/_scripts/slovett/genbank	Get transcript nucleotide fasta from genbank file
+genbank_to_ffn_only_tags.py	/data/_scripts/slovett/genbank	Get transcript nucleotide fasta from genbank file
+genbank_to_fna.py	/data/_scripts/slovett/genbank	Get genomic nucleotide fasta from genbank file
+genbank_to_gene_info.py	/data/_scripts/slovett/genbank	Get input for missing_regions analysis from genbank file
+genbank_to_locus_product.py	/data/_scripts/slovett/genbank	Get locus_tag\tproduct list from genbank file
+genbank_to_tsv_summary.py	/data/_scripts/slovett/genbank	Get tsv summary of genbank file
+gene_info_from_prokka_gff.py	/data/_scripts/slovett
+gene_info_from_rast_gff.py	/data/_scripts/slovett
+get_N_intervals.py	/data/_scripts/slovett
+get_fastq_qual_percentage.py	/data/_scripts/slovett
+get_full_clusters.py	/data/_scripts/slovett
+get_go_terms_from_uniprot.py	/data/_scripts/slovett
+locus_table_add_product.py	/data/_scripts/slovett
+locus_tags_to_fasta.py	/data/_scripts/slovett
+make_dip_ref.py	/data/_scripts/slovett
+missing_regions_analysis.py	/data/_scripts/slovett/missing_regions
+mutagenesis_oligo_design.py	/data/_scripts/slovett
+n_content.py	/data/_scripts/slovett
+only_longest_seq.py	/data/_scripts/slovett
+pairwise_identity_v2.py	/data/_scripts/slovett
+parse_samogitia.py	/data/_scripts/slovett
+perc_no_cover.py	/data/_scripts/slovett
+add_celltype_to_genedump.py	/data/_scripts/slovett/single_cell
+add_description_to_carnold_stuff.py	/data/_scripts/slovett/single_cell
+sc_product_descriptions.py	/data/_scripts/slovett/single_cell
+sc_umi_expression_matrix.py	/data/_scripts/slovett/single_cell
+sc_umi_expression_matrix_v2.py	/data/_scripts/slovett/single_cell
+single_cell_wrapper.py	/data/_scripts/slovett/single_cell
+summarize_wafergen_report_csv.R	/data/_scripts/slovett/single_cell
+summarize_htseq.py	/data/_scripts/slovett
+translate_seqs.py	/data/_scripts/slovett
+transpose_table.py	/data/_scripts/slovett
+covplots_cli.R	/data/_scripts/slovett/trim_shift
+trim_shift_BAC.py	/data/_scripts/slovett/trim_shift
+Trim redundant end sequences 
+trim_shift_circle_chrom.py	/data/_scripts/slovett/trim_shift	Trim redundant ends and shift circular chromosome to user-defined start point
+trim_viral_alignment.py	/data/_scripts/slovett	Convert likely erroneous bases at beginning and end of viral alignment to N until user-defined number of agreements with consensus occur
